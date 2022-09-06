@@ -4,7 +4,7 @@ scene.background = new THREE.Color(0x008000)
 
 //fondo
 let loader = new THREE.TextureLoader();
-loader.load('../imagenes/agua.jpg', function(texture){
+loader.load('../imagenes/luna.jpg', function(texture){
  scene.background = texture;
 });
 
@@ -21,7 +21,7 @@ document.body.appendChild( render.domElement );
 //GEOMETRIAS 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const textureLoader= new THREE.TextureLoader();
-const matcap= textureLoader.load('../imagenes/agua.jpg')
+const matcap= textureLoader.load('../imagenes/luna.jpg')
 
 const material13 = new THREE.MeshMatcapMaterial()
 material13.matcap = matcap

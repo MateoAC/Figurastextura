@@ -1,6 +1,6 @@
 //escenario
 const scene = new THREE.Scene()
-scene.background = new THREE.Color(0x000000)
+scene.background = new THREE.Color(0xFF2D00)
 
 
 //camara
@@ -27,7 +27,7 @@ material.matcap = matcap
 material.color.set('#ff0000')
 material.metalness = 1;
 material.roughness = 0;
-scene.background = new THREE.Color(0xeeeeee)
+scene.background = new THREE.Color(0xFF2D00)
 
 const ambientaLLight = new THREE.AmbientLight(0xffffff,1)
 scene.add(ambientaLLight);
@@ -36,7 +36,7 @@ const pointLight = new THREE.PointLight(0xffffff, 2)
 scene.add(pointLight)
 pointLight.position.set(5, 5, 5)
 
-const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16, 30, 15, 30 );
 const torusKnot = new THREE.Mesh( geometry, material );
 scene.background = new THREE.Color(0xeeeeee)
 
